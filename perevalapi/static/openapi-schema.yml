@@ -1,0 +1,76 @@
+openapi: 3.0.2
+info:
+  title: 'Pereval application'
+  version: "1.0"
+paths:
+  /authors/:
+    get:
+      operationId: listAuthors
+      description: 'List of authors'
+      parameters: []
+      responses:
+        '200':
+          content:
+          application/json:
+            schema:
+              type: array
+              items:
+                  $ref: '#/components/schemas/Author'
+          description: ''
+      tags:
+        - authors
+
+    post:
+      operationId: createAuthor
+      description: ''
+      parameters: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Author'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Author'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Author'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Author'
+          description: ''
+      tags:
+        - authors
+
+components:
+  schemas:
+    Author:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        fam:
+          type: string
+          maxLength: 255
+        name:
+          type: string
+          maxLength: 255
+        otc:
+          type: string
+          maxLength: 255
+        email:
+          type: string
+          maxLength: 255
+        phone:
+          type: string
+          maxLength: 255
+      required:
+        - fam
+        - name
+        - otc
+        - user
+        - phone
