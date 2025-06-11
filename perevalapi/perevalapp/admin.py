@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Author
+from .models import Author, PerevalImage, Coords, PerevalAdded
+
 
 @admin.register(Author)
 class AuthorAdmin(admin.ModelAdmin):
@@ -45,3 +46,18 @@ class AuthorAdmin(admin.ModelAdmin):
 
     def get_ordering(self, request):
         return ('pk',)
+
+
+@admin.register(PerevalImage)
+class PerevalImageAdmin(admin.ModelAdmin):
+    list_display = ('__str__', )
+
+
+@admin.register(Coords)
+class CoordsAdmin(admin.ModelAdmin):
+    list_display = ('__str__', )
+
+
+@admin.register(PerevalAdded)
+class PerevalAddedAdmin(admin.ModelAdmin):
+    list_display = ('__str__', )
