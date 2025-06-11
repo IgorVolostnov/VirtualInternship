@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12a15a7f-0947-487c-8a58-aeee98c28558" name="Changes" comment="Commit 202506101635 add model Author(User)" />
+    <list default="true" id="12a15a7f-0947-487c-8a58-aeee98c28558" name="Changes" comment="Commit 202506101635 add branch submitData">
+      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapi/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perevalapi/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749562535266</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit 202506101635 add branch submitData">
+      <option name="closed" value="true" />
+      <created>1749564640472</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749564640472</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -98,6 +114,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 202506091444 add project" />
     <MESSAGE value="Commit 202506101635 add model Author(User)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 202506101635 add model Author(User)" />
+    <MESSAGE value="Commit 202506101635 add branch submitData" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 202506101635 add branch submitData" />
   </component>
 </project>
