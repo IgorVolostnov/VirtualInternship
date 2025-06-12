@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12a15a7f-0947-487c-8a58-aeee98c28558" name="Changes" comment="Commit 202506101635 add branch submitData">
-      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapi/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perevalapi/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +49,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "submitData",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "/home/igoriusha/PycharmProjects/VirtualInternship",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }

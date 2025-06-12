@@ -36,23 +36,28 @@ class CoordsSerializer(serializers.ModelSerializer):
 class ImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = PerevalImage
-        fields = ('id', 'title', 'image', 'image_url')
+        fields = ('id', 'title', 'images')
 
 
 class PerevalAddedSerializer(serializers.HyperlinkedModelSerializer):
-    author = AuthorSerializer()
-    coords = CoordsSerializer(source='coords_set')
-    photos = ImageSerializer(source='perevalimage_set', many=True)
+    username = serializers.ReadOnlyField(source='user.user.username')
+    email = serializers.ReadOnlyField(source='user.user.email')
+    fam = serializers.ReadOnlyField(source='user.fam')
+    name = serializers.ReadOnlyField(source='user.name')
+    otc = serializers.ReadOnlyField(source='user.otc')
+    phone = serializers.ReadOnlyField(source='user.phone')
+    coordinates = CoordsSerializer(many=True)
+    photos = ImageSerializer(many=True)
     class Meta:
         model = PerevalAdded
-        fields = ['beautyTitle', 'title', 'other_titles', 'connect', 'add_time', 'author', 'coords', 'level_winter',
-                  'level_summer', 'level_autumn', 'level_spring', 'photos']
+        fields = ['beautyTitle', 'title', 'other_titles', 'connect', 'add_time', 'username', 'email', 'fam', 'name',
+                  'otc', 'phone', 'coordinates', 'level_winter', 'level_summer', 'level_autumn', 'level_spring', 'photos']
 
     def create(self, validated_data):
         print(validated_data)
         author_data = validated_data.pop('author')
         user_data = author_data.get('user')
-        coords_data = validated_data.pop('coords')
+        coords_data = validated_data.pop('coordinates')
         images_data = self.context.get('view').request.FILES
         print(images_data)
         user = User.objects.create(**user_data)
