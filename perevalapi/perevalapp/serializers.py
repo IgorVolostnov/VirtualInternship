@@ -17,7 +17,6 @@ class AuthorSerializer(serializers.HyperlinkedModelSerializer):
         fields = ['id', 'fam', 'name', 'otc', 'user', 'phone', 'created']
 
     def create(self, validated_data):
-        print(validated_data)
         user_data = validated_data.pop('user')
         try:
             user = User.objects.get(email=user_data.get('email'))
@@ -27,24 +26,34 @@ class AuthorSerializer(serializers.HyperlinkedModelSerializer):
         instance.save()
         return instance
 
-    def validate(self, data):
-        if self.instance:  # 'instance' will be set in case of `PUT` request i.e update
-            object_id = self.instance.id  # get the 'id' for the instance
-            # write your validation logic based on the object id here
-            print(object_id)
-        print(data)
-        return data
-
 
 class CoordsSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField()
     class Meta:
         model = Coords
-        fields = ['latitude', 'longitude', 'height']
+        fields = ['id', 'latitude', 'longitude', 'height']
+        read_only_fields = ['id']
+
+    def to_representation(self, obj):
+        return {
+            'id': obj.pk,
+            'latitude': obj.latitude,
+            'longitude': obj.longitude,
+            'height': obj.height
+        }
 
 class ImageSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField()
     class Meta:
         model = PerevalImage
         fields = ('id', 'title', 'images')
+        read_only_fields = ['id']
+
+    def to_representation(self, obj):
+        return {
+            'id': obj.pk,
+            'title': obj.title
+        }
 
 
 class PerevalAddedSerializer(serializers.HyperlinkedModelSerializer):
@@ -97,14 +106,50 @@ class PerevalAddedSerializer(serializers.HyperlinkedModelSerializer):
                                )
         for image_data in images_data:
             PerevalImage.objects.create(pereval=instance,
-                                        image=image_data,
+                                        images=image_data,
                                         title=image_data.name)
         return instance
 
     def validate(self, data):
-        if self.instance:  # 'instance' will be set in case of `PUT` request i.e update
-            object_id = self.instance.id  # get the 'id' for the instance
-            # write your validation logic based on the object id here
-            print(object_id)
-        print(data)
+        if data['status'] != 'new':
+            raise serializers.ValidationError("Статус публикации не 'Новый'")
         return data
+
+    def update(self, instance, validated_data):
+        instance.beautyTitle = validated_data['beautyTitle']
+        instance.title = validated_data['title']
+        instance.other_titles = validated_data['other_titles']
+        instance.connect = validated_data['connect']
+        instance.level_winter = validated_data['level_winter']
+        instance.level_summer = validated_data['level_summer']
+        instance.level_autumn = validated_data['level_autumn']
+        instance.level_spring = validated_data['level_spring']
+        instance.status = validated_data['status']
+        instance.save()
+
+        # Удаляем координаты, не включенные в запрос
+        latitudes = [item['latitude'] for item in validated_data['coordinates']]
+        longitudes = [item['longitude'] for item in validated_data['coordinates']]
+        coordinates = instance.coordinates.all()
+        for coordinate in coordinates:
+            if coordinate.latitude not in latitudes and coordinate.longitude not in longitudes:
+                coordinate.delete()
+
+        # Создаем или обновляем новые координаты
+        for item in validated_data['coordinates']:
+            coordinate = Coords(id=item['id'], latitude=item['latitude'], longitude=item['longitude'],
+                                height=item['height'], pereval=instance)
+            coordinate.save()
+
+        # Удаляем изображения, не включенные в запрос
+        id_image = [item['id'] for item in validated_data['photos']]
+        images = instance.photos.all()
+        for image in images:
+            if image.id not in id_image:
+                image.delete()
+
+        # Создаем или обновляем новые изображения
+        for item in validated_data['photos']:
+            image = PerevalImage(id=item['id'], title=item['title'], pereval=instance)
+            image.save()
+        return instance
