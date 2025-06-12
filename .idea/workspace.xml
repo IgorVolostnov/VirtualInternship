@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12a15a7f-0947-487c-8a58-aeee98c28558" name="Changes" comment="Commit 202506101635 add branch submitData">
+    <list default="true" id="12a15a7f-0947-487c-8a58-aeee98c28558" name="Changes" comment="Commit 202506121024 add PerevalAddedSerializer">
       <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749564640472</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit 202506121024 add PerevalAddedSerializer">
+      <option name="closed" value="true" />
+      <created>1749713067521</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749713067521</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -109,6 +117,7 @@
     <MESSAGE value="Commit 202506091444 add project" />
     <MESSAGE value="Commit 202506101635 add model Author(User)" />
     <MESSAGE value="Commit 202506101635 add branch submitData" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 202506101635 add branch submitData" />
+    <MESSAGE value="Commit 202506121024 add PerevalAddedSerializer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 202506121024 add PerevalAddedSerializer" />
   </component>
 </project>
