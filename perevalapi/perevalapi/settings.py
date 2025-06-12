@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'perevalapp.apps.PerevalappConfig',
     # подключаем приложение к djangorestframework
     'rest_framework',
+    'drf_yasg',
     "django.forms",
 ]
 

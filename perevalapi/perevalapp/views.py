@@ -1,3 +1,5 @@
+from drf_yasg.utils import swagger_auto_schema
+from markdown import Markdown
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.decorators import permission_classes
@@ -9,18 +11,21 @@ from .models import *
 from rest_framework.parsers import MultiPartParser, FormParser
 
 
+@swagger_auto_schema(format=Markdown)
 class AuthorViewset(viewsets.ModelViewSet):
    queryset = Author.objects.all()
    serializer_class = AuthorSerializer
    permission_classes = [AllowAny]
 
 
+@swagger_auto_schema(format=Markdown)
 class PerevalAddedViewset(viewsets.ModelViewSet):
    queryset = PerevalAdded.objects.all()
    serializer_class = PerevalAddedSerializer
    permission_classes = [AllowAny]
 
 
+@swagger_auto_schema(format=Markdown)
 class ImageAPIView(APIView):
    parser_classes = (MultiPartParser, FormParser,)
 
