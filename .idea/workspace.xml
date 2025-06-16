@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12a15a7f-0947-487c-8a58-aeee98c28558" name="Changes" comment="Commit 202506121940 final commit">
-      <change afterPath="$PROJECT_DIR$/perevalapi/static/images/API_title.png" afterDir="false" />
+    <list default="true" id="12a15a7f-0947-487c-8a58-aeee98c28558" name="Changes" comment="Commit 202506161629 add README">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapi/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749746470626</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Commit 202506161629 add README">
+      <option name="closed" value="true" />
+      <created>1750080654844</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1750080654844</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -162,6 +167,7 @@
     <MESSAGE value="Commit 202506121209 add PATCH metod" />
     <MESSAGE value="Commit 202506121209 add PATCH 2" />
     <MESSAGE value="Commit 202506121940 final commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 202506121940 final commit" />
+    <MESSAGE value="Commit 202506161629 add README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 202506161629 add README" />
   </component>
 </project>
