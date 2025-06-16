@@ -1,4 +1,3 @@
-from rest_framework.exceptions import ValidationError
 from .models import *
 from rest_framework import serializers
 

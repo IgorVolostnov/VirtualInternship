@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12a15a7f-0947-487c-8a58-aeee98c28558" name="Changes" comment="Commit 202506121209 add PATCH 2">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="12a15a7f-0947-487c-8a58-aeee98c28558" name="Changes" comment="Commit 202506121940 final commit">
+      <change afterPath="$PROJECT_DIR$/perevalapi/static/images/API_title.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/perevalapi/perevalapi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapi/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapi/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perevalapi/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perevalapi/static/openapi-schema.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/perevalapi/templates/swagger-ui.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/perevalapi/perevalapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/perevalapi/perevalapp/serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,21 +48,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/igoriusha/PycharmProjects/VirtualInternship",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/igoriusha/PycharmProjects/VirtualInternship&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/perevalapi/static/images" />
       <recent name="$PROJECT_DIR$/perevalapi/static" />
     </key>
   </component>
@@ -140,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749727649237</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Commit 202506121940 final commit">
+      <option name="closed" value="true" />
+      <created>1749746470626</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749746470626</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -154,6 +161,7 @@
     <MESSAGE value="Commit 202506121209 add moderation status" />
     <MESSAGE value="Commit 202506121209 add PATCH metod" />
     <MESSAGE value="Commit 202506121209 add PATCH 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 202506121209 add PATCH 2" />
+    <MESSAGE value="Commit 202506121940 final commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 202506121940 final commit" />
   </component>
 </project>
